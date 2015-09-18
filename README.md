@@ -1,8 +1,7 @@
 Mac setup
 =========
 
-My OS X configuration, application and dotfiles management.
-This turns any OSX machine into a personalized workstation.
+Setup a new OSX machine with ease.
 
 Install
 -------
