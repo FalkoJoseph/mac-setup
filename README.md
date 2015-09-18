@@ -45,13 +45,13 @@ Make your own customizations
 
 Put your customizations in /home
 
-Reading
--------
+Additional reading
+------------------
 
-http://mikebuss.com/2014/02/02/a-beautiful-productive-terminal-experience/
-https://mattstauffer.co/blog/series/setting-up-a-new-os-x-development-machine
+[A beautiful productive termnal experience](http://mikebuss.com/2014/02/02/a-beautiful-productive-terminal-experience/)
+[Settngi up a new OS X development machine](https://mattstauffer.co/blog/series/setting-up-a-new-os-x-development-machine)
+[setup](https://github.com/MoOx/setup) by MoOx
 
-License
--------
+---
 
-Mac-setup is copyright © 2015 Falko Joseph.
+**Based on [worker](https://github.com/thibmaek/worker)**
