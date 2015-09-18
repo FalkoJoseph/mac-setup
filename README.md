@@ -48,10 +48,10 @@ Put your customizations in /home
 Additional reading
 ------------------
 
-[A beautiful productive termnal experience](http://mikebuss.com/2014/02/02/a-beautiful-productive-terminal-experience/)
-[Settngi up a new OS X development machine](https://mattstauffer.co/blog/series/setting-up-a-new-os-x-development-machine)
-[setup](https://github.com/MoOx/setup) by MoOx
+- [A beautiful productive termnal experience](http://mikebuss.com/2014/02/02/a-beautiful-productive-terminal-experience/)
+- [Settngi up a new OS X development machine](https://mattstauffer.co/blog/series/setting-up-a-new-os-x-development-machine)
+- [setup](https://github.com/MoOx/setup) by MoOx
 
 ---
 
-**Based on [worker](https://github.com/thibmaek/worker)**
+**Inspired by [worker](https://github.com/thibmaek/worker)**
