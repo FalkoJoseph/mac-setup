@@ -6,7 +6,7 @@ echo "./home"
 cd ./home
 
 # Check if XCode Select is installed
-if ! [[ which xcode-select ]]; then
+if ![ which xcode-select ]; then
   echo "Command line tools not installed!"
   return
 else
