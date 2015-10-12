@@ -3,7 +3,6 @@ install wget
 install zsh
 install tmux
 
-
 # Cask
 cask install atom
 cask install google-chrome
