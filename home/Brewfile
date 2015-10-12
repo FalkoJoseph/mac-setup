@@ -1,21 +1,3 @@
-# Homebrew
-install wget
-install zsh
-install tmux
-
-# Cask
-cask install atom
-cask install google-chrome
-cask install iterm2
-cask install slack
-cask install flux
-cask install spotify
-cask install sketch-toolbox
-cask install vlc
-cask install google-drive
-cask install heroku-toolbelt
-cask install dropbox
-cask install spectacle
-cask install postgres
-cask install transmission
-cask install skype
+wget
+zsh
+tmux

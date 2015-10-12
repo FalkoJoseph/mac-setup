@@ -26,9 +26,13 @@ echo "Installing Homebrew Cask…"
 brew tap homebrew/bundle
 brew install caskroom/cask/brew-cask
 
-# Install Homebrew Bundle
-echo "Installing Homebrew Bundle…"
-brew bundle
+# Install brews
+echo "Installing bundles…"
+brew install $(cat Brewfile|grep -v "#")
+
+# Install casks
+echo "Installing casks…"
+brew cask install $(cat Caskfile|grep -v "#")
 
 # Install XCode Command Line Tools.
 echo "Installing xcode-select… 🔨"
