@@ -51,10 +51,6 @@ rbenv global 2.2.3
 echo "Rehashing Gems for this Ruby build…"
 rbenv rehash
 
-# Install Gemfile
-echo "Installing Rubygems… 💎"
-bundle install --system
-
 # Install Node
 echo "Installing Node…"
 brew install node
@@ -78,6 +74,10 @@ npm install -g ember-cli
 # apm list --bare --installed --dev false > Atomfile
 echo "Installing Atom packages…"
 apm install --packages-file Atomfile
+
+# Install Gemfile
+echo "Installing Rubygems… 💎"
+bundle install --system
 
 echo "Configuring OSX preferences…"
 ./osx-preferences/osx.sh
