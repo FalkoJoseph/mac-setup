@@ -3,25 +3,18 @@ Mac setup
 
 Setup a new OSX machine with ease.
 
-Install
--------
+How to install
+--------------
 
-Install required dependencies:
-
-    bin/install
-
-Requirements
-------------
-
-- XCode + command line tools
-
-Additional
-----------
-
-- Thoughtbot dotfiles or your own (https://github.com/thoughtbot/dotfiles)
-- zsh + ohmyzsh (https://github.com/robbyrussell/oh-my-zsh)
-- Powerline fonts (https://github.com/powerline/fonts)
-- iTerm theme: Solarized Dark
+0. Create a `/Code` directory. This is where you'll place your projects.
+1. Install XCode + Git
+2. Git clone `mac-setup` on your computer
+3. Git clone `dotfiles` on your computer
+3. Install iTerm2, set the theme to `Solarized Dark` and home directory to `/Code`
+4. Set zsh as your default shell `chsh -s $(which zsh)`
+5. Run mac-setup `with bin/install.sh`
+6. Install the Thoughtbot dotfiles (https://github.com/thoughtbot/dotfiles)
+7. Install ohmyzsh (https://github.com/robbyrussell/oh-my-zsh)
 
 Software from the App Store
 ---------------------------
@@ -32,17 +25,6 @@ These applications should be downloaded from the App Store manually.
 - Ember
 - Sketch
 - 1password
-
-Todo
-----
-
-- Symlink atom-config
-- Include dotfiles
-
-Make your own customizations
-----------------------------
-
-Put your customizations in /home
 
 Additional reading
 ------------------
