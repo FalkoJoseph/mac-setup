@@ -14,7 +14,8 @@ How to install
 4. Set zsh as your default shell `chsh -s $(which zsh)`
 5. Run mac-setup `with bin/install.sh`
 6. Install the Thoughtbot dotfiles (https://github.com/thoughtbot/dotfiles)
-7. Install ohmyzsh (https://github.com/robbyrussell/oh-my-zsh)
+7. Install your personal dotfiles with `git clone <repo> dotfiles-local` and run `rcup` again
+8. Install `ohmyzsh` (https://github.com/robbyrussell/oh-my-zsh)
 
 Software from the App Store
 ---------------------------
