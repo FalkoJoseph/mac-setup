@@ -1,22 +1,22 @@
-# Software
-
-cask "atom"
-cask "google-chrome"
-cask "iterm2"
-cask "slack"
-cask "flux"
-cask "spotify"
-cask "sketch-toolbox"
-cask "vlc"
-cask "google-drive"
-cask "heroku-toolbelt"
-cask "dropbox"
-cask "spectacle"
-cask "postgres"
-cask "transmission"
-cask "skype"
-
 # Homebrew
-brew wget
-brew zsh
-brew tmux
+install wget
+install zsh
+install tmux
+
+
+# Cask
+cask install atom
+cask install google-chrome
+cask install iterm2
+cask install slack
+cask install flux
+cask install spotify
+cask install sketch-toolbox
+cask install vlc
+cask install google-drive
+cask install heroku-toolbelt
+cask install dropbox
+cask install spectacle
+cask install postgres
+cask install transmission
+cask install skype
