@@ -1,41 +1,36 @@
-/*
- * Your Stylesheet
- *
- * This stylesheet is loaded when Atom starts up and is reloaded automatically
- * when it is changed.
- *
- * If you are unfamiliar with LESS, you can read more about it here:
- * http://www.lesscss.org
- */
-
-* { font-family: Monaco, "Helvetica Neue", Helvetica, Arial, sans-serif; }
-
-.icon-file-directory::before,
-.icon-file-text::before,
-.icon-file-media::before,
-.icon-book::before {
-  display: none;
+// Overrides
+* {
+  font-family: 'OperatorMono-Book';
 }
 
-.tab-bar .tab {
-  font-size: 12px;
-}
+// Remove tab shadow
+.tab-bar { box-shadow: none; }
 
-atom-panel.right {
-  border: 0;
-}
+// Remove left border
+[theme-one-light-ui-layoutmode="auto"] atom-pane-container atom-pane { border-left: 0; }
 
-.editor .git-commit.line-too-long.deprecated {
-  color: orange;
-  text-decoration: none;
-}
+// Remove top border
+.platform-darwin atom-workspace.theme-one-light-ui { border-top: none; }
 
-.editor .git-commit.line-too-long.illegal {
-  color: #fff;
-  background: #DA2C43;
-  opacity: 0.9;
-}
+// Remove right border on tabs
+[theme-one-light-ui-layoutmode="auto"] .tab-bar .tab:last-of-type::after { box-shadow: none; }
 
-.tree-view {
+// Remove tab border
+.tab-bar .tab::after { border: 0; }
+
+// Font size
+[theme-one-dark-ui-layoutmode="compact"] {
   font-size: 13px;
+}
+
+// Italic attributes for e.g. Javascript
+.entity.other.attribute-name {
+  font-style: italic;
+}
+
+// Italic attributes for everything
+atom-text-editor::shadow{
+  .entity.other.attribute-name {
+      font-style: italic;
+  }
 }

@@ -1,99 +1,62 @@
 "*":
-  "exception-reporting":
-    userId: "c553f4af-7653-1eac-742a-b277c07af5fc"
-  welcome:
-    showOnStartup: false
-  metrics:
-    userId: "05188b65efe95414ba340fb0af8ec4563d56105e"
   core:
     disabledPackages: [
-      "dev-live-reload"
-      "deprecation-cop"
       "welcome"
       "background-tips"
-      "racer"
-      "timecop"
-      "merge-conflicts"
-      "metrics"
-      "image-view"
-      "styleguide"
-      "autocomplete"
-      "sublime-tabs"
-      "language-clojure"
-      "language-csharp"
-      "language-go"
-      "language-java"
-      "language-make"
-      "language-perl"
-      "language-objective-c"
-      "autoflow"
-      "minimap"
-      "slash-closer"
-      "vim-mode"
+      "status-bar"
+      "linter-jshint"
+      "atom-jshint"
     ]
-    destroyEmptyPanes: false
-    themes: [
-      "one-dark-ui"
-      "chester-atom-syntax"
-    ]
+    useCustomTitleBar: true
   editor:
-    scrollPastEnd: true
+    fontFamily: "OperatorMono-Book"
+    fontSize: 16
     invisibles: {}
-    fontSize: 15
+    scrollPastEnd: true
+    showIndentGuide: true
+    tabType: "soft"
+  "exception-reporting":
+    userId: "24ffdd4a-5bf9-d7df-d51f-48b5f66864b0"
+  jshint:
+    supportLintingJsx: true
+    validateOnlyOnSave: true
+  "language-babel": {}
   linter:
+    errorPanelHeight: 90
     statusIconScope: "File"
-    showErrorPanel: false
-  react: {}
+  "linter-eslint":
+    useGlobalEslint: true
+  "linter-jshint": {}
+  "linter-rubocop":
+    command: "/Users/falkojoseph/.rbenv/shims/rubocop"
   "linter-scss-lint":
     executablePath: "/Users/falkojoseph/.rbenv/shims/scss-lint"
-  "tree-view":
-    hideIgnoredNames: true
-    hideVcsIgnoredFiles: true
-    showOnRightSide: true
+  minimap:
+    displayMinimapOnLeft: true
+    plugins:
+      bookmarks: true
+      bookmarksDecorationsZIndex: 0
+      linter: true
+      linterDecorationsZIndex: 0
+  "one-dark-ui":
+    layoutMode: "Compact"
   "one-light-ui":
     layoutMode: "Compact"
-  "one-dark-ui": {}
-  "autocomplete-ruby": {}
-  "linter-rubocop":
-    executablePath: "/Users/falkojoseph/.rbenv/versions/2.2.3/bin/rubocop"
-"git-diff":
-  showIconsInEditorGutter: true
-tabs:
-  tabScrolling: true
-  showIcons: false
-linter:
-  subtleLinterErrors: [
-    "scss-lint"
-  ]
-  statusBar: "Show error if the cursor is in range"
-"travis-ci-status":
-  personalAccessToken: "e9852c50be871e39e0e821bdd5186ae442efeb0c"
-"block-cursor":
-  primaryColor:
-    red: 64
-    green: 64
-    blue: 64
-    alpha: 1
-  secondaryColor:
-    red: 195
-    green: 195
-    blue: 195
-    alpha: 1
-  cursorThickness: 3
-  preview: "The quick brown fox jumps over the lazy dog"
-"sublime-tabs":
-  showIcons: false
-autosave:
-  enabled: true
-"tree-view":
-  hideIgnoredNames: true
-  hideVcsIgnoredFiles: true
-  showOnRightSide: true
-"autocomplete-plus":
-  maxVisibleSuggestions: 5
-minimap:
-  plugins:
-    "git-diff": true
-  displayMinimapOnLeft: true
-"one-light-ui":
-  layoutMode: "Compact"
+    tabSizing: "Even"
+  react: {}
+  "split-diff":
+    diffWords: true
+    ignoreWhitespace: true
+    leftEditorColor: "red"
+    rightEditorColor: "green"
+    syncHorizontalScroll: true
+  "status-bar": {}
+  tabs:
+    showIcons: false
+  "tool-bar":
+    position: "Left"
+  "tree-view":
+    hideIgnoredNames: true
+    showOnRightSide: true
+  welcome:
+    showOnStartup: false

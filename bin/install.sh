@@ -21,18 +21,9 @@ brew update
 brew upgrade
 brew cleanup
 
-# Install Cask
-echo "Installing Homebrew Cask…"
-brew tap homebrew/bundle
-brew install caskroom/cask/brew-cask
-
 # Install brews
 echo "Installing bundles…"
 brew install $(cat Brewfile|grep -v "#")
-
-# Install casks
-echo "Installing casks…"
-brew cask install $(cat Caskfile|grep -v "#")
 
 # Install XCode Command Line Tools.
 echo "Installing xcode-select… 🔨"
@@ -42,20 +33,20 @@ xcode-select --install
 echo "Installing rbenv and ruby-build…"
 brew install rbenv ruby-build
 
-# Install Ruby 2.2.3
-echo "Installing Ruby 2.2.3…"
-rbenv install 2.2.3
-rbenv global 2.2.3
+# Install Ruby 2.4.0
+echo "Installing Ruby 2.4.0…"
+rbenv install 2.4.0
+rbenv global 2.4.0
 
 # Rehash Rbenvnv
 echo "Rehashing Gems for this Ruby build…"
 rbenv rehash
 
 # Install Node
-echo "Installing Node…"
-brew install node
-brew link node
-brew link --override node
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash
+nvm install node
+nvm use node
+nvm alias default stable
 
 # Install Bower
 echo "Installing Bower…"
@@ -64,10 +55,6 @@ npm install -g bower
 # Install Gulp
 echo "Installing Gulp… 🍹"
 npm install -g gulp
-
-# Install Ember CLI
-echo "Installing Ember CLI…"
-npm install -g ember-cli
 
 # Install Atom packages
 # To list currently installed Atom packages use:
@@ -79,8 +66,5 @@ apm install --packages-file Atomfile
 echo "Installing Rubygems… 💎"
 bundle install --system
 
-echo "Configuring OSX preferences…"
-./osx-preferences/osx.sh
-
-echo "Installation completed…"
+echo "Installation completed… ✨"
 echo $SHELL
